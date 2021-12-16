@@ -1,0 +1,25 @@
+Int[] :a = [4] + [4;2];
+print(size(a));
+print(size((4;9;True)));
+
+print(5>7);
+print(-3<9);
+print(-3>-3.2);
+
+Float: b = 5;
+print(b);
+b = b+7.3+4;
+print(b);
+
+print(5/2);
+
+String: s = "Hello";
+print(s);
+s = s + " world!";
+print(s);
+
+print(size(s));
+
+print(s[-1]);
+
+print(toString(5) + toString(2.4) + toString([2;5]) + toString((True; 4)) + toString(False) + toString("no"));

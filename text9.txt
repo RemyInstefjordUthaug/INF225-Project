@@ -1,0 +1,35 @@
+Int[]: a = [1;2;3];
+print(a);
+Bool[]: c = [True; False];
+print(c);
+(Int; Bool; Int): b = (1;True;5);
+print(b);
+
+Int[][]: d = [[3;4];[1;2]];
+print(d);
+
+Int[]: e = [];
+print(e);
+
+Int[][]: f = [];
+print(f);
+
+Int[][]: g = [[9];[]];
+print(g);
+
+Int[][]: g = [[];[8]];
+print(g);
+
+Int[][][]: h = [[[];[]];[]];
+print(h);
+
+Int[][][]: i = [[[];[5]];[]];
+print(i);
+
+(Int[][]; Int): j = ([]; 5);
+print(j);
+
+(Int[]; Int[])[]: k = [([]; [4]);([1]; [])];
+print(k);
+
+

@@ -1,0 +1,7 @@
+y
+Int: f(Int: x){
+    return x;
+    z
+};
+
+print(3*f(4));

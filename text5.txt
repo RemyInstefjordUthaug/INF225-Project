@@ -1,0 +1,7 @@
+Int: a = 2+3;
+print(a);
+a = a + 4;
+print(a);
+if (True){a = a+2; Int :b = 2; };
+print(a);
+print(b);

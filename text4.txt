@@ -1,0 +1,28 @@
+print(2 == 5 - 3);
+print(2 != 5-3);
+print(1 == True);
+if (True) {
+    print(1);
+    print(2);
+};
+print(3);
+if (False){
+    print(10);
+}elif (True){
+    print(4);
+}else{
+    print(11);
+};
+if (False){
+    print(12);
+}elif(False){
+    print(13);
+}else{
+    print(5);
+};
+if (False){
+    print(14);
+}elif(False){
+    print(15);
+};
+print(6);

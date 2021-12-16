@@ -1,0 +1,24 @@
+Int:a = 1;
+Int:b = 3;
+Int:c = 4;
+if (True) {
+    print(a);
+    Int:a = 2;
+    print(a);
+    Bool: a = True;
+    print(a);
+    print(b);
+    if (True) {
+        Int: b = 5;
+        print(c);
+        print(b);
+        c = 6;
+        print(c);
+        print(a);
+    };
+    print(b+4);
+    print(c+2);
+};
+print(a+8);
+print(b+7);
+print(c+5);

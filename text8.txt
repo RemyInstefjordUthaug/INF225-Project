@@ -1,0 +1,59 @@
+Int: c = -1;
+Void: f(Int: a; Bool: b){
+    if(b){
+        a = a+10;
+    }else{
+        a = a+5;
+    };
+    print(c);
+    c = c-1;
+    print(b);
+    print(a);
+};
+
+Int: a = 5;
+print(a);
+f(a; True);
+f(a; False);
+print(a);
+print(c);
+
+print(100);
+
+c = -1;
+
+Int: g(Int: a; Bool: b){
+    if(b){
+        a = a+10;
+    }else{
+        a = a+5;
+    };
+    print(c);
+    c = c-1;
+    print(b);
+    return a;
+};
+
+Int: a = 5;
+print(a);
+print(g(a; True));
+print(g(a; False));
+print(a);
+print(c);
+
+Void: h(){
+    print(200);
+};
+
+h();
+
+Int: l(){
+    Int: i = 300;
+    return i;
+};
+print(l());
+
+Int: k(){
+    return 200+200;
+};
+print(k());

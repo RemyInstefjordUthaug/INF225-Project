@@ -1,0 +1,26 @@
+Float: sum(Float[]: list){
+    Float: sum = 0;
+    for(Int: i = 0; i < size(list); i = i+1){
+        sum = sum + 1;
+    };
+    return sum;
+};
+
+Float: average(Float[]: list){
+    Float: avg = 0;
+    Int: n = size(list);
+    if (n > 0) {
+        avg = sum(list)/n;
+    };
+    return avg;
+};
+
+Int[]: list = [3; 8; 1; 0] + [2; 9; 3];
+
+print("The sum of the entries in " + toString(list) + " is " + toString(sum(list)));
+print("The average of the entries in " + toString(list) + " is " + toString(avg(list)));
+
+Float[]: list = [3.5; 1.1] + list + [9.9; -100];
+
+print("The sum of the entries in " + toString(list) + " is " + toString(sum(list)));
+print("The average of the entries in " + toString(list) + " is " + toString(avg(list)));

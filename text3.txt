@@ -1,0 +1,9 @@
+print(True);
+print(False);
+print(!True);
+print(True && True);
+print(True && False);
+print(True || False);
+print(False || False);
+Bool:a = True || False;
+print(a);

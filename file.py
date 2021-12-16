@@ -819,7 +819,7 @@ class Evaluator(Interpreter):
 
 def runCode(code, tc, ev):
     tree = parser.parse(code)
-    #tc.visit(tree)
+    tc.visit(tree)
     ev.visit(tree)
 
 def execute(path, o_tc = TypeChecker(), o_ev = Evaluator()):
@@ -829,7 +829,7 @@ def execute(path, o_tc = TypeChecker(), o_ev = Evaluator()):
     i_tc = TypeChecker(o_tc.env)
     i_ev = Evaluator(o_ev.env)
     runCode(code, i_tc, i_ev)
-    #o_tc.env.update(i_tc.env)
+    o_tc.env.update(i_tc.env)
     o_ev.env.update(i_ev.env)
 
 if __name__ == '__main__':
